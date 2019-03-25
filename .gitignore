@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+upload.bat
+# all folders that start with .
+/.ipynb_checkpoints
+
