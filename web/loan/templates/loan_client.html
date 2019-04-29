@@ -10,6 +10,7 @@
               "cincome" : $("#cincome").val(),
               "amount" : $("#amount").val(),
               "term" : $("#term").val(),
+              "cr" : $("#cr").val()
              };
 
      $.getJSON(URL,data, showResult);
@@ -25,18 +26,21 @@
 </head>
 <body>
 
-<h1>Loan Status Form</h1>
+<h1>Loan Prediction Form</h1>
 Applicant Income<br/>
-<input type='text' id='income'/>
+<input type='number' id='income'/>
 <p/>
-CoApplicant Income <br/>
-<input type='text' id='cincome'/>
+Co-applicant Income <br/>
+<input type='number' id='cincome'/>
 <p/>
 Loan Amount<br/>
-<input type='text' id='amount'/>
+<input type='number' id='amount'/>
 <p/>
 Loan Term  <br/>
-<input type='text' id='term'/>
+<input type='number' id='term'/>
+<p/>
+Credit History(1/0)  <br/>
+<input type='number' id='cr'/>
 <p/>
 <button onclick="check()">Check Status</button>
 
