@@ -17,7 +17,7 @@
     }
 
     function showResult(result) {
-       $("#status").text("Loan Status = " + result.status);
+       $("#status").text("Loan Status = " + (result == '1' ? 'Yes' : 'No'));
     }
     </script>
 

@@ -14,7 +14,7 @@ X_test = [[amount,income,cincome,term,cr]]
 
 y = model.predict(X_test)
 
-if  y[0] == '1':
+if  y[0] == 1:
    print("Yessssss")
 else:
    print("Noooooooooo")

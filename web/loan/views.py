@@ -1,7 +1,7 @@
 import pickle
 
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 
 def loan_client(request):
@@ -23,5 +23,5 @@ def loan_status_check(request):
     X_test = [[amount,income, cincome,term,cr]]
     print(X_test)
     status = model.predict(X_test)[0]
-
-    return JsonResponse({"status": status})
+    print(status)
+    return HttpResponse(status)
